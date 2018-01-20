@@ -31,7 +31,7 @@ exports.spotify = {
 Run any one of the following commands:
 - `node liri.js my-tweets` to retrieve the last 20 Tweets by Node JS
 - `node liri.js movie-this <movie-name-here>` *Your Movie Name* will display information about the title of your favorite movie. Get the Title, Year, Review Scores, Actors List, Countries Invovled in Shooting, and more.
-- `node liri.js spotify-this-song <song-name-here>` *Your Song Name* will retreive your Song's Title, Artist, Genre, and a link to the resource in the Spotify API
+- `node liri.js spotify-this-song <song-name-here>` *Your Song Name* will retreive your Song\'s Title, Artist, Genre, and a link to the resource in the Spotify API
 - `node liri.js do-what-it-says` will pull from a random.txt file and give you something neat!
 - `node liri.js --help` will remind you of the commands
 
