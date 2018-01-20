@@ -29,9 +29,11 @@ switch (command) {
         }
         break
     case 'spotify-this-song':
-        if (subprocess) {
-            spotify.spotifyThis(subprocess)
-        }
+        spotify.spotifyThis(subprocess)
+        break
+    case 'movie-this':
+        console.log(subprocess)
+        break
 
  
 
