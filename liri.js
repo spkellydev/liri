@@ -1,12 +1,12 @@
 const { setTimeout } = require('timers')
 const keys = require('./keys')
 const twitter = require('./lib/twitter')
-const spotify = require('./spotify')
+const spotify = require('./lib/spotify')
 const request = require('request')
 const inquirer = require('inquirer')
+let {command, subprocess} = require('./argv')
 
 
-let command = process.argv[2]
 switch (command) {
     case 'my-tweets':
         twitter.getTweets()
@@ -28,8 +28,11 @@ switch (command) {
             }, 700)
         }
         break
-    case 'spotify-this-song'
-        
+    case 'spotify-this-song':
+        if (subprocess) {
+            spotify.spotifyThis(subprocess)
+        }
+
  
 
         
