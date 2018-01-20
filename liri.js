@@ -1,10 +1,10 @@
 const { setTimeout } = require('timers')
-
 const keys = require('./keys')
-const twitter = require('./twitter/twitter')
+const twitter = require('./lib/twitter')
+const spotify = require('./spotify')
 const request = require('request')
 const inquirer = require('inquirer')
-const fs = require('fs')
+
 
 let command = process.argv[2]
 switch (command) {
@@ -27,6 +27,9 @@ switch (command) {
                 })
             }, 700)
         }
+        break
+    case 'spotify-this-song'
+        
  
 
         
